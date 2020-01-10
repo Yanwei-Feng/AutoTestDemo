@@ -38,6 +38,9 @@
     [self expectationForPredicate:predicate evaluatedWithObject:self.testApp.cells handler:nil];
     [self waitForExpectationsWithTimeout:15 handler:nil];
     
+    //0.记录原始个数
+    NSInteger count = self.testApp.cells.count;
+    
     //1.添加闹钟
     XCUIElement *addAlarm = self.testApp.buttons[@"添加闹钟"];
     if (!addAlarm.exists){
@@ -52,8 +55,6 @@
     [datePIckersQuery.pickerWheels.allElementsBoundByIndex[1] swipeUp];
     [datePIckersQuery.pickerWheels.allElementsBoundByIndex[2] swipeUp];
     
-    //3.记录原始个数
-    NSInteger count = self.testApp.cells.count;
     [self.testApp.buttons[@"保存"] tap];
     
     //判断是否添加成功
@@ -61,6 +62,7 @@
     NSPredicate *predicate2 = [NSPredicate predicateWithFormat:@"count == %d",count+1];
     [self expectationForPredicate:predicate2 evaluatedWithObject:self.testApp.cells handler:nil];
     [self waitForExpectationsWithTimeout:15 handler:nil];
+    [self screenShotTestApp:@"alarm"];
 }
 
 

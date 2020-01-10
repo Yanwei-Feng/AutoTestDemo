@@ -58,4 +58,24 @@
         //已经登录
     }
 }
+
+
+-(void)screenShotMyApp:(NSString *)name{
+    [self screenShot:name application:self.myApp];
+}
+
+-(void)screenShotTestApp:(NSString *)name{
+    [self screenShot:name application:self.testApp];
+}
+
+-(void)screenShot:(NSString *)name application:(XCUIApplication *)application{
+    XCUIScreenshot *shot = [application screenshot];
+    
+    XCTAttachment *attach = [XCTAttachment attachmentWithScreenshot:shot];
+    
+    attach.lifetime = XCTAttachmentLifetimeKeepAlways;
+    attach.name = name;
+    
+    [self addAttachment:attach];
+}
 @end

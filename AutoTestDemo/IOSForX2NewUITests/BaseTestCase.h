@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) XCUIApplication *testApp;
 
 -(void)ensureLogin;
+
+-(void)screenShotMyApp:(NSString *)name;
+-(void)screenShotTestApp:(NSString *)name;
 @end
 
 NS_ASSUME_NONNULL_END
