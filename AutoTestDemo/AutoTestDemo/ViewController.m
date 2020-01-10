@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"登录";
     // Do any additional setup after loading the view.
 }
 - (IBAction)onClickLoginBtn:(UIButton *)sender {
@@ -42,6 +43,6 @@
 
 -(void)presentIndexViewController{
     YANIndexCtrl *c = [[YANIndexCtrl alloc] init];
-    [self presentViewController:c animated:YES completion:nil];
+    [self.navigationController pushViewController:c animated:YES];
 }
 @end

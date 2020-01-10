@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AutoTestDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  #pod 'RealReachability'
+  pod 'AFNetworking', '~> 3.0'
+  # Pods for AutoTestDemo
+
+  target 'AutoTestDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  target 'AutoTestAsynDemoTests' do
+    inherit! :search_paths
+    pod 'AFNetworking', '~> 3.0'
+    # Pods for testing
+  end
+  target 'AutoTestAsynDemo2Tests' do
+    inherit! :search_paths
+    pod 'AFNetworking', '~> 3.0'
+    # Pods for testing
+  end
+
+
+  target 'AutoTestDemoUITests' do
+    # Pods for testing
+  end
+
+end

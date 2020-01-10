@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NetManager.h"
 
 @interface AutoTestAsynDemoTests : XCTestCase
 
@@ -41,10 +42,17 @@
     //3.履行期望
     XCTestExpectation *expect3 = [[XCTestExpectation alloc] initWithDescription:@"asyncTest3"];
 
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        XCTAssert(NO);
-        [expect3 fulfill];
-    });
+    [[NetManager sharedInstance] getGoodsList:@"移动硬盘" success:^(id  _Nonnull response) {
+        NSDictionary *response_dict = (NSDictionary *)response;
+        NSArray *results = response_dict[@"result"];
+        if (results.count == 10){
+            [expect3 fulfill];
+        }else{
+            XCTFail(@"%@",response);
+        }
+    } failure:^(NSError * _Nonnull error) {
+        XCTFail(@"");
+    }];
     [self waitForExpectations:@[expect3] timeout:10.0];
 }
 @end

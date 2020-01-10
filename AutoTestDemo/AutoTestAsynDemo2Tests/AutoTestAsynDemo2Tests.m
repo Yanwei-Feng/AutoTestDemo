@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NetManager.h"
 
 @interface AutoTestAsynDemo2Tests : XCTestCase
 

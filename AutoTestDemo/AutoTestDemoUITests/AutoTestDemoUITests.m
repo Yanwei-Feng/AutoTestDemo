@@ -58,6 +58,14 @@
     
     [self.application.buttons[@"登录"] tap];
     
+    XCUIElement *indexCtrl = self.application.navigationBars[@"首页"];
     //判断是否登录成功
+    XCTAssertNotNil(indexCtrl,@"");
 }
+
+-(void)testLogout{
+    [[[XCUIApplication alloc] init].buttons[@"登录"] tap];
+}
+
+
 @end

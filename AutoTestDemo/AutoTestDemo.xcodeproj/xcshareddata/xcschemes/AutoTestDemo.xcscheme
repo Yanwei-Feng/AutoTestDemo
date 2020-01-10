@@ -79,6 +79,16 @@
                ReferencedContainer = "container:AutoTestDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C592F02E23C71DA000FF516B"
+               BuildableName = "IOSForX2NewUITests.xctest"
+               BlueprintName = "IOSForX2NewUITests"
+               ReferencedContainer = "container:AutoTestDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
