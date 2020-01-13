@@ -33,7 +33,7 @@
     if (!alarmPage.exists){
         XCTFail(@"");
     }
-    //设置一个预期 判断 数据加载成功， 等待直至失败，如果符合则不再等待
+    //设置一个预期 判断 数据加载成cd功， 等待直至失败，如果符合则不再等待
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"count >= %d",1];
     [self expectationForPredicate:predicate evaluatedWithObject:self.testApp.cells handler:nil];
     [self waitForExpectationsWithTimeout:15 handler:nil];

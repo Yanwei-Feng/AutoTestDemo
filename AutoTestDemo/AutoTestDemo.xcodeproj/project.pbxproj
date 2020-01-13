@@ -996,7 +996,9 @@
 			baseConfigurationReference = 0548BE5EB6ACB76AD9769977 /* Pods-AutoTestDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8FD76759UN;
 				INFOPLIST_FILE = AutoTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1005,6 +1007,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanwei.autotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AutoTest;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1014,7 +1017,9 @@
 			baseConfigurationReference = 2DF01505D6DA4EE671A451E3 /* Pods-AutoTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8FD76759UN;
 				INFOPLIST_FILE = AutoTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1023,6 +1028,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanwei.autotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AutoTest;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
