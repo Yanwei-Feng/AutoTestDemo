@@ -12,6 +12,7 @@
 		640D138555A63C430EA186B6 /* Pods_AutoTestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF2CCF337B44B3CBDAD64FB /* Pods_AutoTestDemo.framework */; };
 		8F7B4D265E5A0B30174A9295 /* Pods_AutoTestAsynDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04033868F2FC8A93E271F1B6 /* Pods_AutoTestAsynDemoTests.framework */; };
 		9D885992DE9B5E3B78849DE6 /* Pods_AutoTestDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3605EB2B06E6E4503E920BF /* Pods_AutoTestDemoTests.framework */; };
+		C520636B23F4FC0B00D8862D /* EnterpriseInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = C520636A23F4FC0B00D8862D /* EnterpriseInfo.plist */; };
 		C539D7E123BDBE970070E9EC /* YANIndexCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C539D7DF23BDBE970070E9EC /* YANIndexCtrl.m */; };
 		C539D7E223BDBE970070E9EC /* YANIndexCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = C539D7E023BDBE970070E9EC /* YANIndexCtrl.xib */; };
 		C539D7E823BDFBC40070E9EC /* DDCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C539D7E723BDFBC40070E9EC /* DDCommonHelper.m */; };
@@ -87,6 +88,7 @@
 		B3605EB2B06E6E4503E920BF /* Pods_AutoTestDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoTestDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD4DD4C5828778C523FE15A /* Pods_AutoTestDemo_AutoTestDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoTestDemo_AutoTestDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C203A3D0002241B8C2B9CD0B /* Pods-AutoTestAsynDemo2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoTestAsynDemo2Tests.debug.xcconfig"; path = "Target Support Files/Pods-AutoTestAsynDemo2Tests/Pods-AutoTestAsynDemo2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C520636A23F4FC0B00D8862D /* EnterpriseInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnterpriseInfo.plist; sourceTree = "<group>"; };
 		C539D7DE23BDBE970070E9EC /* YANIndexCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YANIndexCtrl.h; sourceTree = "<group>"; };
 		C539D7DF23BDBE970070E9EC /* YANIndexCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YANIndexCtrl.m; sourceTree = "<group>"; };
 		C539D7E023BDBE970070E9EC /* YANIndexCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YANIndexCtrl.xib; sourceTree = "<group>"; };
@@ -196,6 +198,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C520636923F4FC0B00D8862D /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				C520636A23F4FC0B00D8862D /* EnterpriseInfo.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		C539D7DD23BDBE720070E9EC /* mainViewCtrl */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +329,7 @@
 				C592F02523C6B7A000FF516B /* Manager */,
 				C54223E923E7FB5800182A83 /* Model */,
 				C54223EE23E7FF1400182A83 /* ThirdParty */,
+				C520636923F4FC0B00D8862D /* Environment */,
 			);
 			path = AutoTestDemo;
 			sourceTree = "<group>";
@@ -576,6 +587,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C520636B23F4FC0B00D8862D /* EnterpriseInfo.plist in Resources */,
 				C5AE859523BB232900A10C88 /* LaunchScreen.storyboard in Resources */,
 				C5AE859223BB232900A10C88 /* Assets.xcassets in Resources */,
 				C539D7E223BDBE970070E9EC /* YANIndexCtrl.xib in Resources */,
