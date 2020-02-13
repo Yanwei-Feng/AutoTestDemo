@@ -16,6 +16,10 @@
 		C539D7E223BDBE970070E9EC /* YANIndexCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = C539D7E023BDBE970070E9EC /* YANIndexCtrl.xib */; };
 		C539D7E823BDFBC40070E9EC /* DDCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C539D7E723BDFBC40070E9EC /* DDCommonHelper.m */; };
 		C539D7FE23BEEC640070E9EC /* DDSolution.c in Sources */ = {isa = PBXBuildFile; fileRef = C539D7FD23BEEC640070E9EC /* DDSolution.c */; };
+		C54223EC23E7FB7800182A83 /* VBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C54223EB23E7FB7800182A83 /* VBPerson.m */; };
+		C54223ED23E7FB7800182A83 /* VBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C54223EB23E7FB7800182A83 /* VBPerson.m */; };
+		C54223FD23E809BB00182A83 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C54223F323E7FF4100182A83 /* libOCMock.a */; };
+		C54223FE23E809BB00182A83 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C54223F323E7FF4100182A83 /* libOCMock.a */; };
 		C54A50D223C728D400CAFC9F /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C54A50D123C728D400CAFC9F /* BaseTestCase.m */; };
 		C592F02823C6B7B400FF516B /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C592F02723C6B7B400FF516B /* NetManager.m */; };
 		C592F03223C71DA000FF516B /* IOSForX2NewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C592F03123C71DA000FF516B /* IOSForX2NewUITests.m */; };
@@ -90,6 +94,19 @@
 		C539D7E723BDFBC40070E9EC /* DDCommonHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCommonHelper.m; sourceTree = "<group>"; };
 		C539D7FC23BEEC630070E9EC /* DDSolution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSolution.h; sourceTree = "<group>"; };
 		C539D7FD23BEEC640070E9EC /* DDSolution.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DDSolution.c; sourceTree = "<group>"; };
+		C54223EA23E7FB7800182A83 /* VBPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBPerson.h; sourceTree = "<group>"; };
+		C54223EB23E7FB7800182A83 /* VBPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBPerson.m; sourceTree = "<group>"; };
+		C54223F023E7FF4100182A83 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		C54223F123E7FF4100182A83 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		C54223F223E7FF4100182A83 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		C54223F323E7FF4100182A83 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		C54223F423E7FF4100182A83 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		C54223F523E7FF4100182A83 /* OCMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMFunctions.h; sourceTree = "<group>"; };
+		C54223F623E7FF4100182A83 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		C54223F723E7FF4100182A83 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		C54223F823E7FF4100182A83 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		C54223F923E7FF4100182A83 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		C54223FA23E7FF4100182A83 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
 		C54A50D023C728D400CAFC9F /* BaseTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTestCase.h; sourceTree = "<group>"; };
 		C54A50D123C728D400CAFC9F /* BaseTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTestCase.m; sourceTree = "<group>"; };
 		C592F02623C6B7B400FF516B /* NetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
@@ -139,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				640D138555A63C430EA186B6 /* Pods_AutoTestDemo.framework in Frameworks */,
+				C54223FD23E809BB00182A83 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D885992DE9B5E3B78849DE6 /* Pods_AutoTestDemoTests.framework in Frameworks */,
+				C54223FE23E809BB00182A83 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +215,41 @@
 				C539D7FD23BEEC640070E9EC /* DDSolution.c */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		C54223E923E7FB5800182A83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C54223EA23E7FB7800182A83 /* VBPerson.h */,
+				C54223EB23E7FB7800182A83 /* VBPerson.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C54223EE23E7FF1400182A83 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				C54223EF23E7FF4100182A83 /* OCMock */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		C54223EF23E7FF4100182A83 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				C54223F023E7FF4100182A83 /* OCMockObject.h */,
+				C54223F123E7FF4100182A83 /* OCMMacroState.h */,
+				C54223F223E7FF4100182A83 /* OCMock.h */,
+				C54223F323E7FF4100182A83 /* libOCMock.a */,
+				C54223F423E7FF4100182A83 /* NSNotificationCenter+OCMAdditions.h */,
+				C54223F523E7FF4100182A83 /* OCMFunctions.h */,
+				C54223F623E7FF4100182A83 /* OCMStubRecorder.h */,
+				C54223F723E7FF4100182A83 /* OCMRecorder.h */,
+				C54223F823E7FF4100182A83 /* OCMLocation.h */,
+				C54223F923E7FF4100182A83 /* OCMConstraint.h */,
+				C54223FA23E7FF4100182A83 /* OCMArg.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 		C592F02523C6B7A000FF516B /* Manager */ = {
@@ -263,6 +317,8 @@
 				C539D7DD23BDBE720070E9EC /* mainViewCtrl */,
 				C539D7E523BDFB0B0070E9EC /* Helper */,
 				C592F02523C6B7A000FF516B /* Manager */,
+				C54223E923E7FB5800182A83 /* Model */,
+				C54223EE23E7FF1400182A83 /* ThirdParty */,
 			);
 			path = AutoTestDemo;
 			sourceTree = "<group>";
@@ -757,6 +813,7 @@
 				C539D7E823BDFBC40070E9EC /* DDCommonHelper.m in Sources */,
 				C539D7FE23BEEC640070E9EC /* DDSolution.c in Sources */,
 				C539D7E123BDBE970070E9EC /* YANIndexCtrl.m in Sources */,
+				C54223EC23E7FB7800182A83 /* VBPerson.m in Sources */,
 				C5AE858723BB232800A10C88 /* AppDelegate.m in Sources */,
 				C5AE859823BB232900A10C88 /* main.m in Sources */,
 				C5AE858A23BB232800A10C88 /* SceneDelegate.m in Sources */,
@@ -767,6 +824,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54223ED23E7FB7800182A83 /* VBPerson.m in Sources */,
 				C5AE85A223BB232900A10C88 /* AutoTestDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1005,6 +1063,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty/OCMock",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanwei.autotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = AutoTest;
@@ -1026,6 +1090,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty/OCMock",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanwei.autotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = AutoTest;
@@ -1040,12 +1110,37 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FD76759UN;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"$(SRCROOT)/AutoTestDemo/ThirdParty\"",
+				);
 				INFOPLIST_FILE = AutoTestDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanwei.autotest.AutoTestDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1061,12 +1156,37 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FD76759UN;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"$(SRCROOT)/AutoTestDemo/ThirdParty\"",
+				);
 				INFOPLIST_FILE = AutoTestDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty",
+					"$(PROJECT_DIR)/AutoTestDemo/ThirdParty/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanwei.autotest.AutoTestDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

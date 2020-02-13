@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "DDCommonHelper.h"
+#import "VBPerson.h"
+#import <OCMock/OCMock.h>
 #import "DDSolution.h"
 
 @interface AutoTestDemoTests : XCTestCase
@@ -92,4 +94,16 @@
     sleep(1);
 }
 
+
+#pragma mark - OCMock
+-(void)testMock{
+    id personMock = [OCMockObject mockForClass:[VBPerson class]];
+    
+    [[[personMock stub] andReturnValue:OCMOCK_VALUE(@"王五")] changeName:[OCMArg any]];
+    
+    NSString *mockRet = [personMock changeName:@"李四"];
+    [personMock stopMocking];
+    
+    XCTAssert([mockRet isEqualToString:@"张三"]);
+}
 @end

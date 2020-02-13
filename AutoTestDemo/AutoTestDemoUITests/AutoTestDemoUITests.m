@@ -48,6 +48,7 @@
 //}
 
 -(void)testLoginAction{
+    
     XCUIElement *nameTextField = self.application.textFields[@"请输入用户名"];
     [nameTextField tap];
     [nameTextField typeText:@"15620948172"];
