@@ -13,7 +13,7 @@
     self.continueAfterFailure = NO;
     
     self.myApp = [[XCUIApplication alloc] init];
-//    self.myApp.launchArguments = @[@"ResetDefaults", @"NoAnimations", @"UserHasRegistered"];
+    self.myApp.launchArguments = @[@"ResetDefaults", @"NoAnimations", @"UserHasRegistered"];
     [self.myApp launch];
     
     self.testApp = [[XCUIApplication alloc] initWithBundleIdentifier:@"com.jd.smart.dev"];
@@ -30,6 +30,8 @@
 -(void)ensureLogin{
     //判断是否有广告页
     XCUIElement *jumpBtn = self.testApp.buttons[@"跳过"];
+//    XCUICoordinate *coordinate = [jumpBtn coordinateWithNormalizedOffset:CGVectorMake(0, 0)];
+//    [[coordinate coordinateWithOffset:CGVectorMake(0, 0)] tap];
     if (jumpBtn.exists){
         [jumpBtn tap];
     }

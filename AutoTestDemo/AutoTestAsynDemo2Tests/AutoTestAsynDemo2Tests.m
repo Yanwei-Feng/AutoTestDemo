@@ -35,16 +35,16 @@
 //        XCTAssertTrue([response[@"code"] isEqualToString:@"200"]);
 //        expect4 fulfill];
 //    }];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [expect4 fulfill];
     });
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [expect5 fulfill];
     });
 
 //    XCTWaiterResult result = [waiter waitForExpectations:@[expect4] timeout:10 enforceOrder:NO];
     
-    XCTWaiterResult result = [waiter waitForExpectations:@[expect4,expect5] timeout:10 enforceOrder:YES];
+    XCTWaiterResult result = [waiter waitForExpectations:@[expect4,expect5] timeout:4 enforceOrder:YES];
     XCTAssert(result == XCTWaiterResultCompleted, @"failure: %ld", result);
 }
 

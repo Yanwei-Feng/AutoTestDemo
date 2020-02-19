@@ -65,8 +65,9 @@
 }
 
 -(void)testLogout{
-    [[[XCUIApplication alloc] init].buttons[@"登录"] tap];
+    
 }
+
 
 
 @end

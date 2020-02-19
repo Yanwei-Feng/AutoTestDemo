@@ -27,7 +27,7 @@
     [self ensureLogin];
     
     [self.testApp.buttons[@"叮咚"] tap];
-    [[self.testApp.cells elementBoundByIndex:5] tap];
+    [[self.testApp.cells elementBoundByIndex:2] tap];
     //判断是否进入“闹钟提醒页面”
     XCUIElement *alarmPage = self.testApp.navigationBars[@"闹钟提醒"];
     if (!alarmPage.exists){

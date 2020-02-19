@@ -29,7 +29,7 @@
 
 - (void)testExample {
     //1.准备输入
-    NSInteger time1 = 56;
+    NSInteger time1 = 57;
     //2.运行正在测试的代码
     NSString *time1_formated = [DDCommonHelper getFormatedString:time1];
     //3.验证输出
@@ -56,7 +56,7 @@
         NSString *tempString;
         char tempChar[1000];
         
-        strcpy(tempChar,dpLongestPalindrome((char *)[@"ujmrfcujmrfcujmedikmesxujfchnesdxuhrfchnedchsxikmszol,sxjrdcyhnfvjmfvik,mgbol,edcjnedcyhnwesdxjmwsxhnqatgbqaszyhbedxuhjneducjmdcikmrfvcikfvok,tgvboltgbkmedcjmwesduxjmwsxnwsxhbdcgbedchnedfchnerfcjnmedhczxcvbcxcvbxfvrfvdcedtgyhukolujyrfedwsxqawsdcefvyhnjmik,ik,nwesdxjmwsxhnqatgbqaszyhbedxuhjneducjmdcikmrfvcikfvok,tgvboltgbkmedcjmwesduxjmwsxnwsxhbdcgbedchnedfchnerfcjnmedhczxcvbcxcvbxfvrfvdcedtgyhukolujyrfedwsxqawsdcefvyhnjmik,ik,qwertyuioppoiuytrewq" UTF8String]));
+        strcpy(tempChar,longestPalindrome((char *)[@"ujmrfcujmrfcujmedikmesxujfchnesdxuhrfchnedchsxikmszol,sxjrdcyhnfvjmfvik,mgbol,edcjnedcyhnwesdxjmwsxhnqatgbqaszyhbedxuhjneducjmdcikmrfvcikfvok,tgvboltgbkmedcjmwesduxjmwsxnwsxhbdcgbedchnedfchnerfcjnmedhczxcvbcxcvbxfvrfvdcedtgyhukolujyrfedwsxqawsdcefvyhnjmik,ik,nwesdxjmwsxhnqatgbqaszyhbedxuhjneducjmdcikmrfvcikfvok,tgvboltgbkmedcjmwesduxjmwsxnwsxhbdcgbedchnedfchnerfcjnmedhczxcvbcxcvbxfvrfvdcedtgyhukolujyrfedwsxqawsdcefvyhnjmik,ik,qwertyuioppoiuytrewq" UTF8String]));
         tempString = [NSString stringWithFormat:@"%s",tempChar];
         NSLog(@"%@",tempString);
     }

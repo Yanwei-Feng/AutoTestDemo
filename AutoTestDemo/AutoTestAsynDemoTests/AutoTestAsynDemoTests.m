@@ -27,6 +27,7 @@
 - (void)testExample {
     //1.新建期望
     // 测试类持有的初始化方法
+    
     //XCTestExpectation *expect1 = [self expectationWithDescription:@"asyncTest1"];
 
     // 自己持有的初始化方法
