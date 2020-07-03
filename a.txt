@@ -1,3 +1,3 @@
 Void base_func(){
-   print("base_func");
+   print("修改base func. 问题");
 }
