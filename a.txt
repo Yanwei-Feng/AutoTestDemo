@@ -1,3 +1,7 @@
 Void base_func(){
    print("base_func");
 }
+
+Void func1(){
+   print("func1");
+}
