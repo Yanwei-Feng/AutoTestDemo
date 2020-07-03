@@ -1,3 +1,7 @@
 Void base_func(){
    print("修改base func. 问题");
 }
+
+Void func1(){
+    print("dev func 1");
+}
